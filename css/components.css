@@ -536,11 +536,13 @@ footer {
 
 #updates-chip.visible {
     display: flex;
+    justify-content: center;
     animation: chipSlideDown 0.4s cubic-bezier(0.4, 0, 0.2, 1) forwards;
 }
 
 #updates-chip-blog.visible {
     display: flex;
+    justify-content: center;
     animation: chipSlideDown 0.4s 0.15s cubic-bezier(0.4, 0, 0.2, 1) both;
 }
 
