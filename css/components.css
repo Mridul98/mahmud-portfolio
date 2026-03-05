@@ -532,6 +532,7 @@ footer {
 #updates-chip-blog {
     display: none;
     margin-bottom: 8px;
+    align-self: center;
 }
 
 #updates-chip.visible {
