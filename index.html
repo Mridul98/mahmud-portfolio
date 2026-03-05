@@ -30,6 +30,8 @@
     <section class="hero" id="hero">
         <div class="container">
             <div class="hero-content">
+                <div id="updates-chip"></div>
+                <div id="updates-chip-blog"></div>
                 <div class="hero-profile-wrapper">
                     <img src="assets/images/IMG_6222.jpg" alt="Mahmud Nabi" class="hero-profile-img">
                     <div>
@@ -212,16 +214,16 @@
                     <div class="experience-header">
                         <div>
                             <h3 class="experience-role">Senior Data Engineer</h3>
-                            <p class="experience-company">Optimizely | Dhaka, Bangladesh</p>
+                            <p class="experience-company"><svg class="company-logo" width="20" height="20" viewBox="0 0 149.81 148.48" xmlns="http://www.w3.org/2000/svg"><path d="m50.29 81.41v17.69a49.41 49.41 0 0 0 49.35-49.35h-17.64a31.71 31.71 0 0 1 -31.71 31.66z" fill="#3be081"/><path d="m50.29 130.16a31.43 31.43 0 0 1 0-62.85v-17.55a49 49 0 0 0 -.14 98h.14z" fill="#0037ff"/><path d="m50.29 130.16v17.55a49 49 0 0 0 49-49h-17.57a31.46 31.46 0 0 1 -31.43 31.45z" fill="#0cf"/><path d="m50.29 32.19v17.56a49 49 0 0 0 49-49h-17.57a31.46 31.46 0 0 1 -31.43 31.44z" fill="#861dff"/><path d="m99.59 32.19v17.56a49 49 0 0 0 49-49h-17.59a31.46 31.46 0 0 1 -31.41 31.44z" fill="#fc7f10"/></svg> <a href="https://www.optimizely.com" target="_blank">Optimizely</a> | Dhaka, Bangladesh</p>
                         </div>
                         <span class="experience-period">06/2022 – Present</span>
                     </div>
                     <p class="experience-description">A US-based global enterprise empowering businesses to deliver optimized digital experiences at scale using AI-driven experimentation, personalization, and marketing orchestration.</p>
                     
                     <div class="project-card">
-                        <div class="project-header" onclick="toggleProject(this)">
-                            <span class="project-title">📊 Modern Data Stack Migration (AWS RDS Postgres to Snowflake)</span>
-                            <button class="project-toggle">View Details ▼</button>
+                        <div class="project-header" onclick="openDrawer(this)">
+                            <span class="project-title"><svg class="project-icon" width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4"/></svg> Modern Data Stack Migration (AWS RDS Postgres to Snowflake)</span>
+                            <button class="project-toggle"><span class="toggle-text">View Details</span> <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg></button>
                         </div>
                         <div class="project-content">
                             <p style="color: var(--text-secondary); margin-bottom: 12px;">Migration project to upgrade Optimizely's data warehouse to a modern cloud system (Snowflake), reducing cost and data reliability across the organization.</p>
@@ -239,9 +241,9 @@
                     </div>
 
                     <div class="project-card">
-                        <div class="project-header" onclick="toggleProject(this)">
-                            <span class="project-title">🤖 DWBrainstormer (AI Agent) - AI-powered data query engine</span>
-                            <button class="project-toggle">View Details ▼</button>
+                        <div class="project-header" onclick="openDrawer(this)">
+                            <span class="project-title"><svg class="project-icon" width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg> DWBrainstormer (AI Agent) - AI-powered data query engine</span>
+                            <button class="project-toggle"><span class="toggle-text">View Details</span> <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg></button>
                         </div>
                         <div class="project-content">
                             <p style="color: var(--text-secondary); margin-bottom: 12px;">AI-powered data query engine for general knowledge discovery in Optimizely's data.</p>
@@ -257,9 +259,9 @@
                     </div>
 
                     <div class="project-card">
-                        <div class="project-header" onclick="toggleProject(this)">
-                            <span class="project-title">🔄 DataSync (Snowflake to Salesforce Reverse ETL)</span>
-                            <button class="project-toggle">View Details ▼</button>
+                        <div class="project-header" onclick="openDrawer(this)">
+                            <span class="project-title"><svg class="project-icon" width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/></svg> DataSync (Snowflake to Salesforce Reverse ETL)</span>
+                            <button class="project-toggle"><span class="toggle-text">View Details</span> <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg></button>
                         </div>
                         <div class="project-content">
                             <p style="color: var(--text-secondary); margin-bottom: 12px;">Seamless integration of Salesforce and Snowflake, syncing customer insights from Snowflake to Salesforce to power smarter targeting.</p>
@@ -274,9 +276,9 @@
                     </div>
 
                     <div class="project-card">
-                        <div class="project-header" onclick="toggleProject(this)">
-                            <span class="project-title">🤖 ML Pipeline Infrastructure</span>
-                            <button class="project-toggle">View Details ▼</button>
+                        <div class="project-header" onclick="openDrawer(this)">
+                            <span class="project-title"><svg class="project-icon" width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/></svg> ML Pipeline Infrastructure</span>
+                            <button class="project-toggle"><span class="toggle-text">View Details</span> <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg></button>
                         </div>
                         <div class="project-content">
                             <p style="color: var(--text-secondary); margin-bottom: 12px;">Scalable ML pipeline infrastructure, reducing deployment time and accelerating Optimizely's ML-driven customer churn prediction analytics.</p>
@@ -295,16 +297,16 @@
                     <div class="experience-header">
                         <div>
                             <h3 class="experience-role">Software Engineer</h3>
-                            <p class="experience-company">Shohoz Limited | Dhaka, Bangladesh</p>
+                            <p class="experience-company"><img class="company-logo" src="assets/images/shohoz-logo.png" alt="Shohoz" width="20" height="20"> <a href="https://www.shohoz.com" target="_blank">Shohoz Limited</a> | Dhaka, Bangladesh</p>
                         </div>
                         <span class="experience-period">01/2021 – 06/2022</span>
                     </div>
                     <p class="experience-description">One of the largest online ticketing platforms in Bangladesh.</p>
                     
                     <div class="project-card">
-                        <div class="project-header" onclick="toggleProject(this)">
-                            <span class="project-title">⚡ PySpark-based ETL</span>
-                            <button class="project-toggle">View Details ▼</button>
+                        <div class="project-header" onclick="openDrawer(this)">
+                            <span class="project-title"><svg class="project-icon" width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg> PySpark-based ETL</span>
+                            <button class="project-toggle"><span class="toggle-text">View Details</span> <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg></button>
                         </div>
                         <div class="project-content">
                             <p style="color: var(--text-secondary); margin-bottom: 12px;">Implemented PySpark data ingestion jobs for high-volume data processing.</p>
@@ -329,12 +331,11 @@
                 <h2 class="section-title">Featured Projects</h2>
             </div>
             <div class="projects-grid">
-                <div class="project-card-full fade-in">
+                <a href="https://github.com/Mridul98/dbt_salesforce_formula_toolkit" target="_blank" id="project-dbt-salesforce-formula-toolkit" class="project-card-full fade-in">
                     <div class="project-card-header">
-                        <svg class="project-folder" width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"/></svg>
-                        <a href="https://github.com/Mridul98/dbt_salesforce_formula_toolkit" target="_blank" class="project-link">
-                            <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
-                        </a>
+                        <svg class="project-folder" width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                        <svg class="project-link-icon" width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+                        <span class="project-type">dbt Package</span>
                     </div>
                     <h3 class="project-name">dbt_salesforce_formula_toolkit</h3>
                     <p class="project-desc">Solved Fivetran's limitation: automatically generates SQL views exposing Salesforce formula & rollup summary fields that don't sync to data warehouse - eliminating manual formula recreation.</p>
@@ -348,14 +349,13 @@
                             Python
                         </span>
                     </div>
-                </div>
+                </a>
 
-                <div class="project-card-full fade-in">
+                <a href="https://github.com/Mridul98/async-snowflake-connector-python" target="_blank" id="project-async-snowflake-connector-python" class="project-card-full fade-in">
                     <div class="project-card-header">
-                        <svg class="project-folder" width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"/></svg>
-                        <a href="https://github.com/Mridul98/async-snowflake-connector-python" target="_blank" class="project-link">
-                            <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
-                        </a>
+                        <svg class="project-folder" width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                        <svg class="project-link-icon" width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+                        <span class="project-type">Python SDK</span>
                     </div>
                     <h3 class="project-name">async-snowflake-connector-python</h3>
                     <p class="project-desc">Built async Python connector with JWT auth for high-performance data pipelines - enables non-blocking Snowflake operations in modern Python applications.</p>
@@ -369,22 +369,21 @@
                             Python
                         </span>
                     </div>
-                </div>
+                </a>
 
-                <div class="project-card-full fade-in">
+                <a href="https://github.com/Mridul98/dbt_unit_test_best_practice" target="_blank" id="project-dbt-unit-test-best-practice" class="project-card-full fade-in">
                     <div class="project-card-header">
                         <svg class="project-folder" width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h2-2H-6l-5a2 2 0 00-2 2z"/></svg>
-                        <a href="https://github.com/Mridul98/dbt_unit_test_best_practice" target="_blank" class="project-link">
-                            <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
-                        </a>
+                        <svg class="project-link-icon" width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+                        <span class="project-type">dbt Project</span>
                     </div>
                     <h3 class="project-name">dbt_unit_test_best_practice</h3>
                     <p class="project-desc">Solved code maintainability: Demonstrates TDD in data engineering - testing complex SQL transformations, modularizing DBT models, and eliminating repeated code with macros.</p>
                     <div class="project-article">
-                        <a href="https://www.linkedin.com/pulse/test-driven-development-data-engineering-using-dbt-postgres-nabi-hfzbc/" target="_blank" style="display: inline-flex; align-items: center; gap: 6px; color: var(--accent-primary); font-size: 0.85rem; margin-top: 8px;">
+                        <span onclick="event.preventDefault(); event.stopPropagation(); window.open('https://www.linkedin.com/pulse/test-driven-development-data-engineering-using-dbt-postgres-nabi-hfzbc/', '_blank');" style="display: inline-flex; align-items: center; gap: 6px; color: var(--accent-primary); font-size: 0.85rem; margin-top: 8px; cursor: pointer;">
                             <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
                             Featured Article
-                        </a>
+                        </span>
                     </div>
                     <div class="project-stats">
                         <span class="stat">
@@ -396,14 +395,13 @@
                             SQL
                         </span>
                     </div>
-                </div>
+                </a>
 
-                <div class="project-card-full fade-in">
+                <a href="https://github.com/Mridul98/DhakaUSTGCN" target="_blank" class="project-card-full fade-in">
                     <div class="project-card-header">
-                        <svg class="project-folder" width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"/></svg>
-                        <a href="https://github.com/Mridul98/DhakaUSTGCN" target="_blank" class="project-link">
-                            <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
-                        </a>
+                        <svg class="project-folder" width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                        <svg class="project-link-icon" width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+                        <span class="project-type">Research / ML</span>
                     </div>
                     <h3 class="project-name">DhakaUSTGCN</h3>
                     <p class="project-desc">Solved urban traffic prediction: Modified USTGCN neural network for Dhaka using Google Maps data - introduced coefficient of variation metric for traffic fluctuation analysis.</p>
@@ -417,7 +415,7 @@
                             Jupyter
                         </span>
                     </div>
-                </div>
+                </a>
             </div>
         </div>
     </section>
@@ -441,42 +439,56 @@
                     <div class="fade-in">
                         <h3 class="skill-category-title" style="margin-bottom: 16px;">Certifications</h3>
                         <div class="certs-grid">
-                            <div class="cert-item">
+                            <a href="https://www.udemy.com/certificate/UC-a90b5bd7-a30a-420c-af25-52ebea7777f9/" target="_blank" class="cert-item">
                                 <div class="cert-icon">
                                     <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/></svg>
                                 </div>
                                 <div>
                                     <p class="cert-name">Modelling Data Warehouse with DataVault 2.0</p>
                                     <p class="cert-issuer">Udemy</p>
+                                    <span class="cert-type">Data Modelling</span>
                                 </div>
-                            </div>
-                            <div class="cert-item">
+                            </a>
+                            <a href="https://www.coursera.org/account/accomplishments/certificate/TCJ6N3CQEGX6" target="_blank" class="cert-item">
                                 <div class="cert-icon">
                                     <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/></svg>
                                 </div>
                                 <div>
                                     <p class="cert-name">Neural Networks and Deep Learning</p>
                                     <p class="cert-issuer">DeepLearning.AI</p>
+                                    <span class="cert-type">Deep Learning</span>
                                 </div>
-                            </div>
-                            <div class="cert-item">
+                            </a>
+                            <a href="https://www.coursera.org/account/accomplishments/certificate/U3V2ZPFACEEZ" target="_blank" class="cert-item">
                                 <div class="cert-icon">
                                     <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/></svg>
                                 </div>
                                 <div>
                                     <p class="cert-name">Improving Deep Neural Networks</p>
                                     <p class="cert-issuer">DeepLearning.AI</p>
+                                    <span class="cert-type">Hyperparameter Tuning</span>
                                 </div>
-                            </div>
-                            <div class="cert-item">
+                            </a>
+                            <a href="https://www.coursera.org/account/accomplishments/certificate/BP8239PRY6ME" target="_blank" class="cert-item">
                                 <div class="cert-icon">
                                     <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/></svg>
                                 </div>
                                 <div>
                                     <p class="cert-name">Convolutional Neural Networks</p>
                                     <p class="cert-issuer">DeepLearning.AI</p>
+                                    <span class="cert-type">Computer Vision</span>
                                 </div>
-                            </div>
+                            </a>
+                            <a href="https://www.coursera.org/account/accomplishments/certificate/97RBHMCECMB7" target="_blank" class="cert-item">
+                                <div class="cert-icon">
+                                    <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/></svg>
+                                </div>
+                                <div>
+                                    <p class="cert-name">Structuring Machine Learning Projects</p>
+                                    <p class="cert-issuer">DeepLearning.AI</p>
+                                    <span class="cert-type">ML Strategy</span>
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -538,7 +550,19 @@
         </div>
     </footer>
 
+    <div class="drawer-backdrop" id="drawer-backdrop"></div>
+    <div class="drawer" id="project-drawer">
+        <div class="drawer-header">
+            <h3 class="drawer-title" id="drawer-title"></h3>
+            <button class="drawer-close" id="drawer-close" aria-label="Close drawer">
+                <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+            </button>
+        </div>
+        <div class="drawer-body" id="drawer-body"></div>
+    </div>
+
     <script src="js/main.js"></script>
     <script src="js/projects.js"></script>
+    <script src="js/updates.js"></script>
 </body>
 </html>
